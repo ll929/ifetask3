@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE Task 3-37</title>
+    <link rel="stylesheet" href="dialog/dialog.css">
+    <style>
+        .btn{
+            width: 100px;
+            height: 3000px;
+            margin: 0 auto;
+            font: 20px/30px "黑体";
+            text-align: center;
+            background-color: #2189BF;
+            border-radius: 5px;
+            box-shadow: 0 0 3px 1px #2189BF;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="btn">点击我</div>
+<script src="dialog/dialog.js"></script>
+<script>
+    var btn = document.getElementsByClassName("btn")[0];
+    var dialog = new Dialog();
+    btn.onclick = function () {
+        dialog.show({
+            okText : "确定",
+            cancelText : "取消",
+            title : "这是一个弹出框",
+            mainText : "这是内容这是内容这是内容这是内容这是内容",
+            okCallback : function () {
+                alert("你点击了确定按钮")
+            },
+            cancelCallback : function () {
+                alert("你点击了取消按钮")
+            }
+        })
+    }
+</script>
+</body>
+</html>
