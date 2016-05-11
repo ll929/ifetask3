@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE Task 3-38-UI组件之排序表格</title>
+    <link rel="stylesheet" href="table/table.css">
+</head>
+<body>
+<script src="table/table.js"></script>
+<script>
+    var obj = {
+        tbody:{
+            0:["第一列","第二列","第三列","第四列","第五列","第六列"],
+            1:["小明","arrewr","a1","1a",76,76.3],
+            2:["王红","gqrwree","d2","2d",75,35.2],
+            3:["小刚","bewrwe","b3","3b",25,95.1],
+            4:["大亮","uerew","g4","4g",49,65.7],
+            5:["小六","aewrwe","y5","5y",66,46.9]
+        },
+        unsort:[3],
+        sortorder:"z-a",
+        parent:document.body
+    };
+    var a = new Table(obj);
+    var obj1 = {
+        tbody:{
+            0:["第一列","第二列","第三列","第四列","第五列","第六列"],
+            1:["小明","arrewr","a1","1a",76,76.3],
+            2:["王红","gqrwree","d2","2d",75,35.2],
+            3:["小刚","bewrwe","b3","3b",25,95.1],
+            4:["大亮","uerew","g4","4g",49,65.7],
+            5:["小六","aewrwe","y5","5y",66,46.9]
+        },
+        unsort:[3],
+        sortorder:"a-z",
+        parent:document.body
+    };
+    var b = new Table(obj1)
+</script>
+</body>
+</html>
