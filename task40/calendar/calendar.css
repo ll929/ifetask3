@@ -1,0 +1,48 @@
+.calendarJs{
+    margin: 0 auto;
+    font: 20px/1.5 "黑体";
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+}
+.calendarJs thead tr:first-child{
+    background: #f00;
+    color: #fff;
+}
+.calendarJs thead tr:first-child select{
+    cursor: pointer;
+}
+.calendarJs div{
+    margin : 3px 10px;
+}
+.calendarJs div:hover{
+    cursor: pointer;
+}
+.calendarJs td div{
+    padding: 0 10px;
+    line-height: 2;
+}
+.calendarJs .calender-currentMonth{
+    color: #000;
+}
+.calendarJs .calender-currentMonth:hover{
+    background: #0ff;
+    border-radius: 3px;
+}
+.calendarJs .calender-preMonth,.calender-nextMonth{
+    color: #aaa;
+}
+.calendarJs .calender-holiday{
+    color: #f00;
+}
+.calendarJs .calender-today{
+    background: #3f89ec;
+}
+.calendarJs select{
+    font: 20px "黑体";
+    outline: none;
+    border: none;
+    background: #f00;
+    color: #fff;
+}
