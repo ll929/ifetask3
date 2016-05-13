@@ -1,10 +1,12 @@
 .calendarJs{
-    margin: 0 auto;
+    position: absolute;
+    background: #fff;
     font: 20px/1.5 "黑体";
     text-align: center;
     vertical-align: middle;
     border: 1px solid #aaa;
     border-collapse: collapse;
+    display: none;
 }
 .calendarJs thead tr:first-child{
     background: #f00;
@@ -47,4 +49,29 @@
     border: none;
     background: #f00;
     color: #fff;
+}
+.calendarJs-input{
+    margin: 0 auto;
+    height: 26px;
+    width: 200px;
+    padding-left: 32px;
+    background: url("calendar.png" ) no-repeat left center;
+    background-size: 26px;
+}
+.calendarJs-input input{
+    height: 20px;
+    width: 160px;
+}
+.calendarJs tbody div.select{
+    background: #0ff;
+}
+.calendarJs tbody div.select-inner{
+    background: #A9CFEC;
+}
+.calendarJs .calendarJs-cancelBtn,.calendarJs .calendarJs-okBtn{
+    background: #6E8095;
+    border-radius: 5px;
+}
+.calendarJs .calendarJs-cancelBtn:hover,.calendarJs .calendarJs-okBtn:hover{
+    cursor: pointer;
 }

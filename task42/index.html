@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE Task 3-41-UI组件之日历组件（三）</title>
+    <link rel="stylesheet" href="calendar/calendar.css">
+</head>
+<body>
+<div id="date" style="text-align: center;height: 30px"></div>
+<script src="calendar/calendar.js"></script>
+<script>
+    var showDate = document.getElementById("date");
+    var data = {
+        //initDate : [2016,9,1],
+        //limitDate : [1988,2017],
+        duration : true,
+        limitDuration : [2,15],
+        limitCallBack : function (l) {
+            if(l == 1){
+                alert("超出日期选择范围，最多5天")
+            }else {
+                alert("超出日期选择范围，最少2天")
+            }
+        },
+        okCallBack : function (data,status) {
+            if(status == "success"){
+                showDate.innerHTML = data.year[0]+"年"+data.month[0]+"月"+data.day[0]+"日"+"——"+data.year[1]+"年"+data.month[1]+"月"+data.day[1]+"日";
+            }else {
+                showDate.innerHTML = "请选择日期时间段！"
+            }
+        },
+        callBack : function (date) {
+            showDate.innerHTML = date
+        },
+        parent : document.body
+    };
+    var calender = new Calendar(data);
+    //calender.setDate(2008,8,8)
+</script>
+<script>
+    var data1 = {
+        initDate : [2016,9,1],
+        limitDate : [1988,2017],
+        duration : false,
+        //limitDuration : [2,5],
+        callBack : function (date) {
+            showDate.innerHTML = date
+        },
+        parent : document.body
+    };
+    var calender1 = new Calendar(data1);
+    calender1.setDate(2008,8,8)
+</script>
+<div>
+    <h3>使用方法</h3>
+    <div>
+        var data = {<br>
+        initDate : [2016,9,1], //初始化日期，默认设备日期<br>
+        limitDate : [1988,2017], //日期上下限，默认1970~2099<br>
+        duration : true, // 为true，点击选择一天，为false选择时间段，默认false<br>
+        limitDuration : [2,5], //日期可选上下线，默认最小2天，最大1个月<br>
+        limitCallBack : function (a) {  //选择时间段超出范围回调函数，返回1或-1，1高于最大值，-1小于最小值<br>
+        },<br>
+        okCallBack : function (a,b){  //确定按钮回调函数，返回两个值，a:{year:[firstYear,lastYear],month:[……],day:[……]}，b:成功选取日期段返回"success"<br>
+        },<br>
+        callBack : function (date) {  //点击日期回调函数，返回当前点击的date对象<br>
+        //console.log(date)<br>
+        },<br>
+        parent : document.body  //日历组件要添加到的元素节点，默认body<br>
+        };<br>
+        var calender = new Calendar(data);  // 实例化一个日历组件<br>
+        calender.setDate(2008,8,8)  //用于外部设置日历日期<br>
+    </div>
+</div>
+</body>
+</html>

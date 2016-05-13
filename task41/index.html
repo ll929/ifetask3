@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>IFE Task 3-40-UI组件之日历组件（一）</title>
+    <title>IFE Task 3-41-UI组件之日历组件（二）</title>
     <link rel="stylesheet" href="calendar/calendar.css">
 </head>
 <body>
@@ -11,15 +11,15 @@
 <script>
     var showDate = document.getElementById("date");
     var data = {
-        initDate : [2016,9,1],
-        limitDate : [1988,2017],
+        //initDate : [2016,9,1],
+        //limitDate : [1988,2017],
         callBack : function (date) {
             showDate.innerHTML = date
         },
         parent : document.body
     };
     var calender = new Calendar(data);
-    calender.setDate(2008,8,8)
+    //calender.setDate(2008,8,8)
 </script>
 <div>
     <h3>使用方法</h3>
