@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE Task 3-41-组件之日历组件（二）</title>
+    <link rel="stylesheet" href="calendar/calendar.css">
+</head>
+<body>
+<div id="date" style="text-align: center;height: 30px"></div>
+<script src="calendar/calendar.js"></script>
+<script>
+    var showDate = document.getElementById("date");
+    var data = {
+        //initDate : [2016,9,1],
+        //limitDate : [1988,2017],
+        callBack : function (date) {
+            showDate.innerHTML = date
+        },
+        parent : document.body
+    };
+    var calender = new Calendar(data);
+    //calender.setDate(2008,8,8)
+</script>
+<div>
+    <h3>使用方法</h3>
+    <div>
+        var data = {<br>
+        initDate : [2016,9,1], //初始化日期，默认设备日期<br>
+        limitDate : [1988,2017], //日期上下限，默认1970~2099<br>
+        callBack : function (date) {  //点击日期回调函数，返回当前点击的date对象<br>
+        //console.log(date)<br>
+        },<br>
+        parent : document.body  //日历组件要添加到的元素节点，默认body<br>
+        };<br>
+        var calender = new Calendar(data);  // 实例化一个日历组件<br>
+        calender.setDate(2008,8,8)  //用于外部设置日历日期<br>
+    </div>
+</div>
+</body>
+</html>
