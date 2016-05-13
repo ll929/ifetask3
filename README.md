@@ -6,3 +6,4 @@
 * task39 [demo](https://ll929.github.io/ifetask3/task39/index.html) [源码](https://github.com/ll929/ifetask3/tree/gh-pages/task39)
 * task40 [demo](https://ll929.github.io/ifetask3/task40/index.html) [源码](https://github.com/ll929/ifetask3/tree/gh-pages/task40)
 * task41 [demo](https://ll929.github.io/ifetask3/task41/index.html) [源码](https://github.com/ll929/ifetask3/tree/gh-pages/task41)
+* task42 [demo](https://ll929.github.io/ifetask3/task42/index.html) [源码](https://github.com/ll929/ifetask3/tree/gh-pages/task42)

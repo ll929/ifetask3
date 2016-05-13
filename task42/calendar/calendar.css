@@ -1,0 +1,77 @@
+.calendarJs{
+    position: absolute;
+    background: #fff;
+    font: 20px/1.5 "黑体";
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    display: none;
+}
+.calendarJs thead tr:first-child{
+    background: #f00;
+    color: #fff;
+}
+.calendarJs thead tr:first-child select{
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.calendarJs div{
+    margin : 3px 10px;
+}
+.calendarJs thead tr:first-child div:hover,.calendarJs tbody div.calender-currentMonth:hover{
+    cursor: pointer;
+}
+.calendarJs td div{
+    padding: 0 10px;
+    line-height: 2;
+}
+.calendarJs .calender-currentMonth{
+    color: #000;
+}
+.calendarJs .calender-currentMonth:hover{
+    background: #0ff;
+    border-radius: 3px;
+}
+.calendarJs .calender-preMonth,.calender-nextMonth{
+    color: #aaa;
+}
+.calendarJs .calender-holiday{
+    color: #f00;
+}
+.calendarJs .calender-today{
+    background: #3f89ec;
+}
+.calendarJs select{
+    font: 20px "黑体";
+    outline: none;
+    border: none;
+    background: #f00;
+    color: #fff;
+}
+.calendarJs-input{
+    margin: 0 auto;
+    height: 26px;
+    width: 200px;
+    padding-left: 32px;
+    background: url("calendar.png" ) no-repeat left center;
+    background-size: 26px;
+}
+.calendarJs-input input{
+    height: 20px;
+    width: 160px;
+}
+.calendarJs tbody div.select{
+    background: #0ff;
+}
+.calendarJs tbody div.select-inner{
+    background: #A9CFEC;
+}
+.calendarJs .calendarJs-cancelBtn,.calendarJs .calendarJs-okBtn{
+    background: #6E8095;
+    border-radius: 5px;
+}
+.calendarJs .calendarJs-cancelBtn:hover,.calendarJs .calendarJs-okBtn:hover{
+    cursor: pointer;
+}
